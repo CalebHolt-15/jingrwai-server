@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5fd73b5a-c4b9-420e-ad9d-27c0951a5b12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602921758507</updated>
       <workItem from="1602921759780" duration="743000" />
-      <workItem from="1602922515936" duration="1351000" />
+      <workItem from="1602922515936" duration="2440000" />
     </task>
     <task id="LOCAL-00001" summary="Added gitignore">
       <created>1602922272972</created>
@@ -63,22 +82,45 @@
       <option name="project" value="LOCAL" />
       <updated>1602922374417</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Configured Babel script">
+      <created>1602923946688</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602923946688</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added gitignore" />
     <MESSAGE value="Initialize Project files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialize Project files" />
+    <MESSAGE value="Configured Babel script" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configured Babel script" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="18" key="CommitChangelistDialog2" timestamp="1602922374305">
+    <state x="0" y="18" key="CommitChangelistDialog2" timestamp="1602923946580">
       <screen x="0" y="18" width="1366" height="750" />
     </state>
-    <state x="0" y="18" key="CommitChangelistDialog2/0.18.1366.750/1366.0.1366.768@0.18.1366.750" timestamp="1602922374305" />
+    <state x="0" y="18" key="CommitChangelistDialog2/0.18.1366.750/1366.0.1366.768@0.18.1366.750" timestamp="1602923946580" />
+    <state x="0" y="79" key="DiffContextDialog" timestamp="1602923919634">
+      <screen x="0" y="18" width="1366" height="750" />
+    </state>
+    <state x="0" y="79" key="DiffContextDialog/0.18.1366.750/1366.0.1366.768@0.18.1366.750" timestamp="1602923919634" />
     <state x="455" y="98" key="RollbackChangesDialog" timestamp="1602923206230">
       <screen x="0" y="18" width="1366" height="750" />
     </state>

@@ -1,1 +1,3 @@
-console.log("hhelloo")
+import { start } from './server'
+
+start()
