@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fd73b5a-c4b9-420e-ad9d-27c0951a5b12" name="Default Changelist" comment="" />
+    <list default="true" id="5fd73b5a-c4b9-420e-ad9d-27c0951a5b12" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -40,11 +46,46 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602921758507</updated>
-      <workItem from="1602921759780" duration="400000" />
+      <workItem from="1602921759780" duration="743000" />
+      <workItem from="1602922515936" duration="1351000" />
     </task>
+    <task id="LOCAL-00001" summary="Added gitignore">
+      <created>1602922272972</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602922272972</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initialize Project files">
+      <created>1602922374417</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602922374417</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added gitignore" />
+    <MESSAGE value="Initialize Project files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialize Project files" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="18" key="CommitChangelistDialog2" timestamp="1602922374305">
+      <screen x="0" y="18" width="1366" height="750" />
+    </state>
+    <state x="0" y="18" key="CommitChangelistDialog2/0.18.1366.750/1366.0.1366.768@0.18.1366.750" timestamp="1602922374305" />
+    <state x="455" y="98" key="RollbackChangesDialog" timestamp="1602923206230">
+      <screen x="0" y="18" width="1366" height="750" />
+    </state>
+    <state x="455" y="98" key="RollbackChangesDialog/0.18.1366.750/1366.0.1366.768@0.18.1366.750" timestamp="1602923206230" />
+    <state x="279" y="131" key="Vcs.Push.Dialog.v2" timestamp="1602922421835">
+      <screen x="0" y="18" width="1366" height="750" />
+    </state>
+    <state x="279" y="131" key="Vcs.Push.Dialog.v2/0.18.1366.750/1366.0.1366.768@0.18.1366.750" timestamp="1602922421835" />
   </component>
 </project>
