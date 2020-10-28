@@ -2,22 +2,23 @@ import express from "express"
 import cors from "cors"
 import {json, urlencoded} from "body-parser"
 import morgan from "morgan"
-import {connect} from "./utils/db";
-import {config} from "./config/config";
+import {connect} from "./utils/db"
+import {config} from "./config/config"
 
 const app = express()
 
+//middlewares
 app.use(cors())
 app.use(json())
 app.use(urlencoded({ extended: true }))
 app.use(morgan('dev'))
 
-app.get('/',(req, res) => {
+app.get('/',(req, res) => {    
     res.send('hello')
 })
 
 app.post('/',(req, res) => {
-    res.send(req.body)
+    res.send('ok')
 })
 
 export const start = async () => {
