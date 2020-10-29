@@ -4,6 +4,8 @@ import {json, urlencoded} from "body-parser"
 import morgan from "morgan"
 import {connect} from "./utils/db"
 import {config} from "./config/config"
+import userRouter from './users/user.router'
+import songRouter from './songs/song.router'
 
 const app = express()
 
@@ -13,13 +15,12 @@ app.use(json())
 app.use(urlencoded({ extended: true }))
 app.use(morgan('dev'))
 
-app.get('/',(req, res) => {    
+app.get('/',(req, res) => {
     res.send('hello')
 })
 
-app.post('/',(req, res) => {
-    res.send('ok')
-})
+app.use('/mic', userRouter)
+app.use('/song', songRouter)
 
 export const start = async () => {
     try {
