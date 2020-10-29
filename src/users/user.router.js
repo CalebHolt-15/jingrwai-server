@@ -1,9 +1,12 @@
 import { Router } from 'express';
-import controllers from './user.controllers';
+import controllers from './user.controller';
 
 const router = Router();
 
-router.route('/').get(controllers.getAll).post(controllers.createOne);
+router
+  .route('/')
+  .get(controllers.getAll)
+  .post(controllers.createOne);
 
 router
   .route('/:id')

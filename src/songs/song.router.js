@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import controllers from './song.controller'
 
 const router = Router();
 

@@ -2,6 +2,7 @@ export const getOne = (model) => async (req, res) => {
     try {
       const doc = await model.findOne({ _id: req.params.id }).lean().exec();
   
+      // if nothing is returned from DB
       if (!doc) {
         return res.status(400).end();
       }
