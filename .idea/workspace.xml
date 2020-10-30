@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5fd73b5a-c4b9-420e-ad9d-27c0951a5b12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/config/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +63,8 @@
       <option name="presentableId" value="Default" />
       <updated>1602921758507</updated>
       <workItem from="1602921759780" duration="743000" />
-      <workItem from="1602922515936" duration="5201000" />
+      <workItem from="1602922515936" duration="9518000" />
+      <workItem from="1603097706328" duration="1131000" />
     </task>
     <task id="LOCAL-00001" summary="Added gitignore">
       <created>1602922272972</created>
@@ -97,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602925112746</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Connected to DB successfully">
+      <created>1602927744365</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602927744365</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,19 +117,21 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added gitignore" />
     <MESSAGE value="Initialize Project files" />
     <MESSAGE value="Configured Babel script" />
     <MESSAGE value="Server successfully listening" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server successfully listening" />
+    <MESSAGE value="Connected to DB successfully" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connected to DB successfully" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="436" y="18" key="CommitChangelistDialog2" timestamp="1602925112632">
+    <state x="436" y="18" key="CommitChangelistDialog2" timestamp="1602927744124">
       <screen x="0" y="18" width="1366" height="750" />
     </state>
-    <state x="436" y="18" key="CommitChangelistDialog2/0.18.1366.750/1366.0.1366.768@0.18.1366.750" timestamp="1602925112632" />
+    <state x="436" y="18" key="CommitChangelistDialog2/0.18.1366.750/1366.0.1366.768@0.18.1366.750" timestamp="1602927744124" />
     <state x="0" y="79" key="DiffContextDialog" timestamp="1602923919634">
       <screen x="0" y="18" width="1366" height="750" />
     </state>

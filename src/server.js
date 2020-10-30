@@ -7,7 +7,7 @@ import { config } from "./config/config";
 import userRouter from "./users/user.router";
 import songRouter from "./songs/song.router";
 import postRouter from "./posts/post.router";
-import { signup } from "./utils/auth";
+import { signin, signup } from "./utils/auth";
 
 const app = express();
 
@@ -25,6 +25,7 @@ app.use("/user", userRouter);
 app.use("/song", songRouter);
 app.use("/post", postRouter);
 app.use("/signup", signup);
+app.use("/signin", signin);
 
 export const start = async () => {
   try {

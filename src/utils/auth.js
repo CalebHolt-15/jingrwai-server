@@ -34,7 +34,36 @@ export const signup = async (req, res) => {
 };
 // create new user and response with a token,email,pwd,jwt
 
-export const signin = async (req, res) => {};
+export const signin = async (req, res) => {
+  if (!req.body.email || !req.body.password) {
+    return res.status(400).json({ message: "need email and password bro" });
+  }
+
+  const invalid = { message: "Invalid email and passoword combination bro" };
+
+  try {
+    const user = await User.findOne({ email: req.body.email })
+      .select("email password")
+      .exec();
+
+    if (!user) {
+      return res.status(401).json(invalid);
+    }
+
+    const match = await user.checkPassword(req.body.password);
+
+    if (!match) {
+      return res.status(401).json(invalid);
+    }
+
+    const token = newToken(user);
+    return res.status(201).json({ token });
+  } catch (e) {
+    console.error(e);
+    res.status(500).end();
+  }
+};
+//use POST not GET(bcos GET will not return body)
 //check if users credential valid or not,
 //check hashed pwd(of user from DB and user signing in) if match or not ?
 //if matched =>create
