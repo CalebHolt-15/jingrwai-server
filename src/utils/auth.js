@@ -71,8 +71,32 @@ export const signin = async (req, res) => {
 //if not => the signing in user is Not AUTHORISE
 
 export const protect = async (req, res, next) => {
+  const bearer = req.headers.authorization;
+
+  if (!bearer || !bearer.startsWith("Bearer ")) {
+    return res.status(401).end();
+  }
+
+  const token = bearer.split("Bearer ")[1].trim();
+  let payload;
+  try {
+    payload = await verifyToken(token);
+  } catch (e) {
+    return response.status(401).end();
+  }
+  const user = await User.findById(payload.id)
+    .select("-password")
+    .lean()
+    .exec();
+
+  if (!user) {
+    return res.status(401).end();
+  }
+
+  req.user = user;
   next();
 };
+
 // protect api route
 //for every single req to /api/route => exec protect and protect will look for the JWT in the Authorisation-Header
 //grab the token from Authorisation-Header and run it through Verify fxn
