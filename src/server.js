@@ -8,8 +8,27 @@ import userRouter from "./users/user.router";
 import songRouter from "./songs/song.router";
 import postRouter from "./posts/post.router";
 import { protect, signin, signup } from "./utils/auth";
+import fs from "fs";
+import https from "https";
+import path from "path";
+
+const certificate = fs.readFileSync(
+  path.join(__dirname, "cert/server.cert"),
+  "utf8"
+);
+
+const privateKey = fs.readFileSync(
+  path.join(__dirname, "cert/private.key"),
+  "utf8"
+);
+
+const credentials = {
+  key: privateKey,
+  cert: certificate,
+};
 
 const app = express();
+const httpsServer = https.createServer(credentials, app);
 
 //middlewares
 app.use(cors());
@@ -32,8 +51,8 @@ app.use("/post", postRouter);
 export const start = async () => {
   try {
     await connect();
-    app.listen(config.port, () => {
-      console.log(`REST API on http://localhost:${config.port}`);
+    httpsServer.listen(config.port, () => {
+      console.log(`REST API on https://localhost:${config.port}`);
     });
   } catch (e) {
     console.error(e);

@@ -1,4 +1,5 @@
 import { Router } from "express";
+import controllers from "./post.controller";
 
 const router = Router();
 
