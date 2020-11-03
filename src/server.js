@@ -30,8 +30,25 @@ const credentials = {
 const app = express();
 const httpsServer = https.createServer(credentials, app);
 
-//middlewares
-app.use(cors());
+app.use((req, res, next) => {
+  console.log(req.headers);
+  next();
+});
+
+app.disable("x-powered-by");
+app.use(
+  cors({
+    origin: "https://localhost:3000",
+    methods: ["GET", "PUT", "POST", "DELETE"],
+    allowedHeaders: [
+      "Content-Type",
+      "Authorization",
+      "Access-Control-Allow-Headers",
+    ],
+    credentials: true,
+  })
+);
+
 app.use(json());
 app.use(urlencoded({ extended: true }));
 app.use(morgan("dev"));
