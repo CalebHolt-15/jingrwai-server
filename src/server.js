@@ -13,12 +13,12 @@ import https from "https";
 import path from "path";
 
 const certificate = fs.readFileSync(
-  path.join(__dirname, "cert/server.cert"),
+  path.join(__dirname, "../sslcert/localhost.pem"),
   "utf8"
 );
 
 const privateKey = fs.readFileSync(
-  path.join(__dirname, "cert/private.key"),
+  path.join(__dirname, "../sslcert/localhost-key.pem"),
   "utf8"
 );
 
@@ -38,7 +38,7 @@ app.use((req, res, next) => {
 app.disable("x-powered-by");
 app.use(
   cors({
-    origin: "https://localhost:3000",
+    origin: "https://localhost:3000", //connect to client
     methods: ["GET", "PUT", "POST", "DELETE"],
     allowedHeaders: [
       "Content-Type",
@@ -65,11 +65,12 @@ app.use("/user", userRouter);
 app.use("/song", songRouter);
 app.use("/post", postRouter);
 
+//httpsServer fxn that start the server on 8090
 export const start = async () => {
   try {
     await connect();
-    httpsServer.listen(config.port, () => {
-      console.log(`REST API on https://localhost:${config.port}`);
+    httpsServer.listen(8090, () => {
+      console.log('Server Started on https://localhost:8090');
     });
   } catch (e) {
     console.error(e);

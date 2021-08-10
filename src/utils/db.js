@@ -1,15 +1,15 @@
 import mongoose from 'mongoose'
 import {config} from '../config/config'
 
-export const connect = (url = config.dbUrl, opts = {}) => {
-    return (mongoose.connect(
-        url,
-        { ...opts, useNewUrlParser: true, useUnifiedTopology: true},
+//mongoose is library FXN that connect to monoDB
+export const connect = () => {
+    return (mongoose.connect("mongodb://localhost:27017/songs",
+        {useNewUrlParser: true, useUnifiedTopology: true},
         (err) => {
             if (err) {
                 console.error('Error :' + err);
             } else {
-                console.log('DB: connected');
+                console.log('Connected to Mongodb Database which is local');
             }
         }
     ),

@@ -20,6 +20,7 @@ export const verifyToken = (token) =>
   });
 
 export const signup = async (req, res) => {
+  console.log("Sign up")
   if (!req.body.email || !req.body.password) {
     return res.status(400).send({ message: "Email and password required bro" });
   }
