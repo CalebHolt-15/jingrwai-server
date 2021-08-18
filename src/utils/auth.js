@@ -20,9 +20,9 @@ export const verifyToken = (token) =>
   });
 
 export const signup = async (req, res) => {
-  console.log("Sign up")
+  console.log("Sign up");
   if (!req.body.email || !req.body.password) {
-    return res.status(400).send({ message: "Email and password required bro" });
+    return res.status(400).send({ message: "Email and password required" });
   }
   try {
     const user = await User.create(req.body);
@@ -37,10 +37,10 @@ export const signup = async (req, res) => {
 
 export const signin = async (req, res) => {
   if (!req.body.email || !req.body.password) {
-    return res.status(400).json({ message: "need email and password bro" });
+    return res.status(400).json({ message: "Need email and password" });
   }
 
-  const invalid = { message: "Invalid email and passoword combination bro" };
+  const invalid = { message: "Invalid email and passoword combination" };
 
   try {
     const user = await User.findOne({ email: req.body.email })

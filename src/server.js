@@ -71,7 +71,7 @@ export const start = async () => {
   try {
     await connect();
     httpsServer.listen(8090, () => {
-      console.log('Server Started on https://localhost:8090');
+      console.log("Server Started on https://localhost:8090");
     });
   } catch (e) {
     console.error(e);
